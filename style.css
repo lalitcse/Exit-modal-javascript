@@ -1,0 +1,256 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:  sans-serif !important;
+    box-sizing: border-box;
+}
+
+/* top section main wrapper */
+.top_section{
+    width: 100%;
+    height: 50%;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* common positioning for brand logo and tagline*/
+.top_section .brand , .top_section .tagline, .tagline_for_mobile, .cookie , .cookie_set{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top_section .brand{
+    padding: 0px;
+    margin: 0px;
+    color: #CC3131;
+    font-size: 32px;
+}
+
+.top_section .tagline {
+    margin: 0px;
+    padding-top: 150px;
+    color: #a8adb2;
+}
+
+.tagline_for_mobile{
+    display: none;
+    margin: 0px;
+    padding-top: 150px;
+    color: #a8adb2;
+}
+
+.cookie{
+    margin: 0px;
+    padding-top: 250px;
+    color: #a8adb2;
+}
+
+.cookie_set{
+    margin: 0px;
+    padding-top: 350px;
+    color: #a8adb2;
+}
+
+.get_cookie_hide{
+    display: none;
+}
+
+.cookie_set_hide{
+    display: none;
+}
+
+.cookie_hide{
+    display: none;
+}
+
+/* modal styling */
+.modal{
+    display: none;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FED500;
+    padding: 16px 16px;
+    width: 70%;
+    height: 80%;
+}
+.close-button {
+    float: right;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.close-button:hover {
+    background-color: #dfba01;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* modal inner wrapper style starts */
+
+
+.flex_wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 92%;
+    justify-content: center;
+}
+
+.form_section{
+    width: 65%;
+    /* background-color: black; */
+}
+
+.banner_section{
+    width: 35%;
+}
+
+.form_inner_wrapper{
+    margin: 40px;
+}
+
+.form_inner_wrapper{
+    text-align: center !important;
+}
+
+.off_punch{
+    color: #080404;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.news_punch{
+    color: #3a220a;
+    font-size: 22px;
+    margin: 4px 0px 0px 0px;
+}
+
+/* input box styling */
+
+.name_input , .email_input{
+    width: 90%;
+    height: 48px;
+    margin-top: 22px;
+    padding-left: 18px;
+    border: none;
+}
+
+.name_input:active , .name_input:focus , .email_input:active , .email_input:focus{
+    outline: none;
+    border: none;
+}
+
+.form_input_checkbox{
+    text-align: left !important;
+    padding-left: 22px;
+    margin-top: 8px;
+}
+
+/* checkbox style */
+
+.checkbox_label{
+    color: #99750A !important;
+    font-size: 14px;
+}
+
+.signup_btn{
+    width: 90%;
+    height: 60px;
+    background-color: #000000;
+    color: white;
+    margin-top: 28px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.signup_btn:active , .signup_btn:focus{
+    outline: none;
+    border: none;
+}
+
+.policy_link{
+    color: #99750A;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* validation text style */
+
+.warning_wrapper{
+    text-align: left !important;
+}
+
+.validation_warning{
+    color: #FE0000;
+    font-size: 12px;
+    margin-left: 26px;
+    margin-top: 2px;
+}
+
+.name_error{
+    display: none;
+}
+
+.email_error{
+    display: none;
+}
+
+/* mobile responsive */
+
+@media only screen and (max-width: 768px){
+    .banner_section{
+        display: none !important;
+        width: 0%;
+    }
+    .form_section{
+        width: 100%;
+    }
+
+    .banner_img{
+        display: none !important;
+    }
+
+    .form_inner_wrapper {
+        margin: 0px;
+    }
+
+    .off_punch{
+        font-size: 14px;
+    }
+    
+    .news_punch{
+        font-size: 14px;
+    }
+
+    .modal-content {
+        height: 60%;
+    }
+
+    .checkbox_label{
+        font-size: 12px;
+    }
+}
